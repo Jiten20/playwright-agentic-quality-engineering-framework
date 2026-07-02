@@ -1,10 +1,13 @@
 name: Playwright Quality Gate
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - main
       - feature/**
+
   pull_request:
     branches:
       - main
